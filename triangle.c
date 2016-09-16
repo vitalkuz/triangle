@@ -34,5 +34,5 @@ float x1, y1, x2, y2, x3, y3, xa, ya;
   return 0;
   }
   printf("\n yes \n");
-  return 0;
+return 0;
 }

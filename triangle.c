@@ -2,7 +2,7 @@
 
 int main() {
 
-  float x1, y1, x2, y2, x3, y3, xa, ya;
+float x1, y1, x2, y2, x3, y3, xa, ya;
 
   printf("Enter triangle coordinates\n1 dot\nx= ");
   scanf("%f", &x1);

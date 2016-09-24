@@ -2,7 +2,16 @@
 
 int check_two_dots(float x_testable, float y_testable, float x1_line_dot, float y1_line_dot, float x2_line_dot, float y2_line_dot, float x_checked_dot, float y_checked_dot) {
   
-  if ((((x_testable - x1_line_dot) / (x2_line_dot - x1_line_dot)) - ((y_testable - y1_line_dot) / (y2_line_dot - y1_line_dot))) * (((x_checked_dot - x1_line_dot) / (x2_line_dot - x1_line_dot)) - ((y_checked_dot - y1_line_dot) / (y2_line_dot - y1_line_dot))) <= 0) {
+  float a, b, c, d, e, f;
+  
+  a = x_testable - x1_line_dot;
+  b = x2_line_dot - x1_line_dot;
+  c = y_testable - y1_line_dot;
+  d = y2_line_dot - y1_line_dot;
+  e = x_checked_dot - x1_line_dot;
+  f = y_checked_dot - y1_line_dot;
+  
+  if (((a / b) - (c / d)) * ((e / b) - (f / d)) <= 0) {
 	  printf("\n no \n");
 	  return 1;
 	}
